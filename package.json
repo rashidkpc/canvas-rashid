@@ -1,0 +1,11 @@
+{
+  "name": "canvas-rashid",
+  "version": "1.0.0",
+  "description": "OMG NO",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Rashid Khan",
+  "license": "Apache 2.0"
+}
