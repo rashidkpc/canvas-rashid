@@ -16,7 +16,6 @@ canvas.register(() => ({
     },
     catch: {
       resolve: false,
-      aliases: ['fn'],
       help: 'Value to return if expression errors',
     },
   },
