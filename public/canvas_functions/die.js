@@ -1,4 +1,4 @@
-canvas.register(function() {
+export const die = () => {
   return {
     name: 'die',
     help: 'Start an infinite loop',
@@ -13,4 +13,4 @@ canvas.register(function() {
       }
     },
   };
-});
+};

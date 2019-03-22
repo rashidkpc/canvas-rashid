@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { map, flatten } from 'lodash';
-import stubData from '../serverLib/asteroids.json';
+import stubData from './asteroids.json';
 
 const getRows = data => {
   const flattened = flatten(map(data.near_earth_objects, v => v));
@@ -42,7 +42,7 @@ const getRows = data => {
   };
 };
 
-canvas.register(() => ({
+export const asteroids = () => ({
   name: 'asteroids',
   type: 'datatable',
   help: 'Space is terrifying. These are the asteroids that are going to kill us.',
@@ -72,4 +72,4 @@ canvas.register(() => ({
       .then(data => getRows(data))
       .catch(() => getRows(stubData));
   },
-}));
+});

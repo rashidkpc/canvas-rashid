@@ -3,8 +3,7 @@
  * or more contributor license agreements. Licensed under the Elastic License;
  * you may not use this file except in compliance with the Elastic License.
  */
-
-canvas.register(() => ({
+export const tryFn = () => ({
   name: 'try',
   aliases: [],
   help: 'Handle errors gracefully',
@@ -22,4 +21,4 @@ canvas.register(() => ({
   fn: (context, args) => {
     return args.expression(context).catch(() => args.catch(context));
   },
-}));
+});

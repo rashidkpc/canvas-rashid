@@ -1,10 +1,4 @@
-/*
- * Copyright Elasticsearch B.V. and/or licensed to Elasticsearch B.V. under one
- * or more contributor license agreements. Licensed under the Elastic License;
- * you may not use this file except in compliance with the Elastic License.
- */
-
-canvas.register(() => ({
+export const lucenefilter = () => ({
   name: 'lucenefilter',
   aliases: [],
   type: 'filter',
@@ -28,4 +22,4 @@ canvas.register(() => ({
 
     return { ...context, and: [...context.and, filter] };
   },
-}));
+});
