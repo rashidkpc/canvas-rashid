@@ -42,6 +42,7 @@ const getRows = data => {
   };
 };
 
+console.log('Registering ASTEROIDS');
 export const asteroids = () => ({
   name: 'asteroids',
   type: 'datatable',

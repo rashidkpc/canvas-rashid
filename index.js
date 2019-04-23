@@ -1,3 +1,4 @@
+import pkg from './package.json';
 import { loadServer } from './server';
 
 export default function(kibana) {
@@ -5,7 +6,7 @@ export default function(kibana) {
     require: ['elasticsearch'],
     name: 'canvas-rashid',
     uiExports: {
-      hacks: ['plugins/canvas-rashid/canvas_functions/load'],
+      hacks: [`plugins/${pkg.name}/load`],
     },
 
     config(Joi) {
