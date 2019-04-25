@@ -6,7 +6,7 @@ export default function(kibana) {
     require: ['elasticsearch'],
     name: 'canvas-rashid',
     uiExports: {
-      hacks: [`plugins/${pkg.name}/load`],
+      hacks: [`plugins/${pkg.name}/canvas_functions/load`],
     },
 
     config(Joi) {
